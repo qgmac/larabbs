@@ -52,3 +52,5 @@ Route::get('topics/{topic}/{slug?}', 'TopicsController@show')->name('topics.show
 Route::resource('replies', 'RepliesController', ['only' => ['store', 'destroy']]);
 
 Route::resource('notifications', 'NotificationsController', ['only' => ['index']]);
+
+Route::get('permission-denied', 'PageController@permissionDenied')->name('permission-denied');
