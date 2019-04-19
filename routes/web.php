@@ -15,7 +15,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/', 'PageController@root')->name('root');
+Route::get('/', 'TopicsController@index')->name('root');
 
 //Auth::routes();
 
